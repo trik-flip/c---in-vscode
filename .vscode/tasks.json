@@ -74,5 +74,22 @@
 				"clear": false
 			},
 		},
+		{
+			"label": "Clean up active file",
+			// run a shell command
+			"type": "shell",
+			// remove the debug file
+			"command": "rm '${fileDirname}\\${fileBasenameNoExtension}_debug.exe'",
+			// only show when there is a error
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			},
+			"detail": "deletes the compiled debug file"
+		},
 	]
 }

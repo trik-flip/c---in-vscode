@@ -50,4 +50,9 @@
     ],
     "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code",
+    "explorer.confirmDelete": false,
+    "search.exclude": {
+        "**/lib*/**": true,
+        "**/bin/**": true,
+    },
 }

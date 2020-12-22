@@ -1,5 +1,42 @@
 {
 	"version": "2.0.0",
 	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C++ build active file",
+			"command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				// output file is located in the /bin folder 
+				"-o",
+				"${fileDirname}\\..\\bin\\${fileBasenameNoExtension}.exe",
+				// optimise the code
+				"-O2",
+				"-Wall",
+				// compile for x86 if build on x86, or compile for x86_64 if build on x86_64
+				"-march=native"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compile for release",
+			// only show when there is a error
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			},
+		},
 	]
 }

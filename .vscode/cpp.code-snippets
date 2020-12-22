@@ -1,2 +1,29 @@
 {
+	// A simple How-to guide for "Using VSCode snippets"
+	//
+	// # Name
+	// Give your snippets simple and short names 
+	// 
+	// # The prefix
+	// the "prefix" is the piece of code which needs to be typed for the snippet suggetion to pop up
+	// - Keep it short
+	// - Keep it simple
+	// 
+	// # the body
+	// The body it the piece of code which will replace the prefix
+	// The body can be a single line like, "body":"Single line of code",
+	// or be a multi-line snippet like, "body":["line1","line2","line3"]
+	// 
+	// # inside the body
+	// the body will accept user input, 
+	// - $1, this will set the cursor to this place.
+	// - ${1:placeholder}, this  will insert a place holder and select the whole placeholder
+	// - ${1|x,y,z|}, will prompt a dropdown bar with the options x,y and z
+	// 
+	// # Description
+	// explain the snippet
+	// 
+	// # scope
+	// add the extentions like this following "cpp,jsonc" <- this way the snippet can only be used in jsonc and cpp files.
+	// (Jsonc is the default type of this and other .vscode files, like: launch and tasks) 
 }

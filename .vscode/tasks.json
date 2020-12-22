@@ -38,5 +38,41 @@
 				"clear": false
 			},
 		},
+		{
+			"type": "cppbuild",
+			"label": "C++ build active file (Debug Mode)",
+			"command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+			"args": [
+				// input file
+				"-g",
+				"${file}",
+				// output file
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}_debug.exe",
+				// optimise for debugging
+				"-Og",
+				// show all errors
+				"-Wall",
+				// The debug flag
+				"-D DEBUG"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "Compile for debugging",
+			// only show when there is a error
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			},
+		},
 	]
 }

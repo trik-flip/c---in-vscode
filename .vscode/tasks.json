@@ -91,5 +91,38 @@
 			},
 			"detail": "deletes the compiled debug file"
 		},
+		{
+			"label": "Create library",
+			"type": "shell",
+			"command": "ar rvs lib/libfunctions.a src/lib/*.o",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			},
+			"group": "build",
+			"detail": "Add all compiled object files to a library"
+		},
+		{
+			"label": "compile all files",
+			"type": "shell",
+			"command": "g++ -c ../*.cpp",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			},
+			"options": {
+				"cwd": "${cwd}/src/lib"
+			},
+			"group": "build",
+			"detail": "Compile all c++ files"
+		}
 	]
 }

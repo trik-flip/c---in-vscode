@@ -1,3 +1,4 @@
+{
     "better-comments.highlightPlainText": false,
     "better-comments.multilineComments": true,
     "better-comments.tags": [
@@ -47,3 +48,4 @@
             "italic": false
         }
     ],
+}

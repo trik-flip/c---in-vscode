@@ -48,4 +48,6 @@
             "italic": false
         }
     ],
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
 }

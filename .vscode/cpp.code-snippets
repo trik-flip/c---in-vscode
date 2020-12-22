@@ -38,4 +38,19 @@
 		"description": "Makes an new function",
 		"scope": "cpp",
 	},
+	"Create a new snippet": {
+		"prefix": "snip",
+		"body": [
+			"\"${1:Snippet name}\": {",
+			"\t\t\"prefix\": \"${2:prefix}\",",
+			"\t\t\"body\": [",
+			"\t\t\t\"${3:snippet body}\",",
+			"\t\t],",
+			"\t\t\"description\": \"${4:extra description}\"",
+			"\t\t\"scope\": \"${5:|jsonc,cpp,hpp|}\"",
+			"\t},"
+		],
+		"description": "a faster and cleaner way of creating snippets",
+		"scope": "jsonc"
+	},
 }

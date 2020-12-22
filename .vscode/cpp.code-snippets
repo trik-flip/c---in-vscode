@@ -26,4 +26,16 @@
 	// # scope
 	// add the extentions like this following "cpp,jsonc" <- this way the snippet can only be used in jsonc and cpp files.
 	// (Jsonc is the default type of this and other .vscode files, like: launch and tasks) 
+	"Create a new function": {
+		"prefix": "def",
+		"body": [
+			"${1|int,char,void|} ${2:Function name}(${3:Parameters})",
+			"{",
+			"\t${5:/* CODE */}",
+			"\treturn ${4:returnVar}",
+			"}"
+		],
+		"description": "Makes an new function",
+		"scope": "cpp",
+	},
 }

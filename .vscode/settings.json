@@ -59,4 +59,6 @@
     "terminal.integrated.shellArgs.windows": [
         "-nologo"
     ],
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "GitHub Dark",
 }
